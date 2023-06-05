@@ -42,7 +42,7 @@ jobs:
       - name: analyse_logs_from_previous_steps
         id: analyse_logs_from_previous_steps
         if: always()
-        uses: Superbasil3/build-failure-analyser-action@v0.1.0
+        uses: Superbasil3/build-failure-analyser-action@v0.1.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           regexes-file-location: https://raw.githubusercontent.com/Superbasil3/build-failure-analyser-action/main/tests/build-failure-analyzer-causes.json
